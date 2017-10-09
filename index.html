@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SPS</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">      
+	<link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <script src="js/angular1.5.6.js"></script>
+
+    <!--angular apps-->
+    <script src="js/mainApp.js"></script>
+    <script src="js/components/about/about.js"></script>
+    <script src="js/components/services/services.js"></script>
+    <script src="js/components/contact/contact.js"></script>
+    <script src="js/components/portfolio/portfolio.js"></script>
+    <script src="js/components/home/home.js"></script>
+    <!--angular apps-->
+
+    <!-- =======================================================
+        Theme Name: Gp
+        Theme URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-templat/
+        Author: BootstrapMade
+        Author URL: https://bootstrapmade.com
+    ======================================================= -->  
+    
+  </head>
+  <body class="homepage" ng-app="main-app" ng-init="navCount =1">   
+	<header id="header">
+        <nav class="navbar" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.jpg" class="resonsive" height="65"></a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li ng-class="{active: navCount==1}"><a href="#" ng-click="navCount = 1">Home</a></li>
+                        <li ng-class="{active: navCount==2}"><a href="#" ng-click="navCount = 2">About Us</a></li>
+                        <li ng-class="{active: navCount==3}"><a href="#" ng-click="navCount = 3">Services</a></li>
+                        <li ng-class="{active: navCount==4}"><a href="#" ng-click="navCount = 4">Portfolio</a></li>
+                        <li ng-class="{active: navCount==5}"><a href="#" ng-click="navCount = 5">Contact</a></li>                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+		
+    </header><!--/header-->
+
+    <home ng-show="navCount==1"></home>
+    <about ng-show="navCount==2"></about>
+    <services ng-show="navCount==3"></services>
+    <portfolio ng-show="navCount==4"></portfolio>
+    <contact ng-show="navCount==5"></contact>
+    
+	
+	<div class="top-bar">
+		<div class="container">
+			<div class="row">
+			    <div class="col-lg-12">
+				   <div class="social">
+						<ul class="social-share">
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+							<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+							<li><a href="#"><i class="fa fa-skype"></i></a></li>
+						</ul>
+				   </div>
+                </div>
+			</div>
+		</div><!--/.container-->
+	</div><!--/.top-bar-->
+	
+	<footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                   
+                    <div class="credits">
+                        <!-- 
+                            All the links in the footer should remain intact. 
+                            You can delete the links only if you purchased the pro version.
+                            Licensing information: https://bootstrapmade.com/license/
+                            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Gp
+                        -->
+                      
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Faq</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>   
+    <script src="js/wow.min.js"></script>
+	<script src="js/main.js"></script>
+    
+</body>
+</html>
