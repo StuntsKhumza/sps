@@ -25,13 +25,13 @@ function composeMemo($data){
     $mail->SMTPAuth = true;
     $mail->Username = "Nkosinathi.Khumalo@web-demos.co.za";
     $mail->Password = "Bhung@ne002";
-    $mail->setFrom('Nkosinathi.Khumalo@web-demos.co.za', 'Nkosinathi Khumalo');
-    $mail->addReplyTo('Nkosinathi.Khumalo@web-demos.co.za', 'Nkosinathi Khumalo');
-    $mail->Subject = 'Dr Mathebula - Booking';
-    
+    $mail->setFrom('Nkosinathi.Khumalo@web-demos.co.za', 'Software Progrexion Solutions');
+    $mail->addReplyTo('Nkosinathi.Khumalo@web-demos.co.za', 'Software Progrexion Solutions ');
+    $mail->Subject = $data['contact']['subject'];
+
 //Set who the message is to be sent to
     $response['email']  = $data['contact'];
-    $mail->addAddress($data['contact']['email'], 'Nkosinathi Khumalo');
+    $mail->addAddress($data['contact']['email'], $data['contact']['name']);
 //Set the subject line
     
 //Read an HTML message body from an external file, convert referenced images to embedded,
