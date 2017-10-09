@@ -1,4 +1,6 @@
 #Turn on the Rewrite Engine
 RewriteEngine On
 RewriteRule ^sps$ index.html
+RewriteRule ^api$ php/service.php
+
 
