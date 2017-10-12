@@ -27,12 +27,10 @@ function composeMemo($data){
     $mail->Password = "Bhung@ne002";
     $mail->setFrom('Nkosinathi.Khumalo@web-demos.co.za', 'Software Progrexion Solutions');
     $mail->addReplyTo('Nkosinathi.Khumalo@web-demos.co.za', 'Software Progrexion Solutions ');
+    
+    //Set the subject line
     $mail->Subject = $data['contact']['subject'];
-
-//Set who the message is to be sent to
-    $response['email']  = $data['contact'];
     $mail->addAddress($data['contact']['email'], $data['contact']['name']);
-//Set the subject line
     
 //Read an HTML message body from an external file, convert referenced images to embedded,
 //convert HTML into a basic plain-text alternative body
@@ -48,7 +46,8 @@ function composeMemo($data){
        $response['status'] = 500; 
        $response['message'] = "Mailer Error: " . dirname(__FILE__) . " " . $mail->ErrorInfo;
     } else {
-        echo "Message sent!";
+        $response['status'] = 200; 
+        $response['message'] = "Email sent successfully";
     }
 
     return json_encode($response);

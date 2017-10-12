@@ -895,7 +895,7 @@ a.accordion-toggle  i{
 #sendmessage {
     color: green;
     border:1px solid green;
-    display:none;
+    display:block;
     text-align:center;
     padding:15px;
     font-weight:600;
@@ -904,7 +904,7 @@ a.accordion-toggle  i{
 
 #errormessage {
     color: red;
-    display:none;
+    display:block;
     border:1px solid red;
     text-align:center;
     padding:15px;

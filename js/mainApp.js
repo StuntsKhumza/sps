@@ -10,7 +10,7 @@ angular.module('main-app', apps)
 
     .service('api', function ($http) {
 
-        this.restendpoint = "php/service.php"; //api;
+        this.restendpoint = "php/service.php";
 
         this.doServiceCall = function (data) {
 

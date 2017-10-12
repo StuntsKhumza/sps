@@ -8,10 +8,12 @@
                  <h2>Drop Your Message</h2>
                  <p class="lead">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
              </div> 
+
              <div class="row contact-wrap"> 
                  <div class="col-sm-8 col-sm-offset-2">
-                     <div id="sendmessage">Your message has been sent. Thank you!</div>
-                     <div id="errormessage"></div>
+                     
+                     <div id="sendmessage" ng-if="contactCtr.showMessage">{{contactCtr.message}}</div>
+                     <div id="errormessage" ng-if="contactCtr.showMessage1">{{contactCtr.message}}</div>
                      <form action="" method="post" role="form" class="contactForm">
                          <div class="form-group">
                              <input type="text" name="name" class="form-control" id="name" ng-model="contactCtr.data.contact.name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -30,7 +32,7 @@
                              <div class="validation"></div>
                          </div>
                          
-                         <div class="text-center"><button type="button" ng-click="contactCtr.sendMemo()" class="btn btn-primary btn-lg">Send Message</button></div>
+                         <div class="text-center"><button type="button" ng-click="contactCtr.sendMemo()" ng-disabled="contactCtr.spinner || (contactCtr.data.contact.name.length == 0 || contactCtr.data.contact.email.length == 0 || contactCtr.data.contact.subject.length == 0|| contactCtr.data.contact.message.length == 0)" class="btn btn-primary btn-lg">Send Message</button></div>
                      </form>     
                  </div>
              </div><!--/.row-->
@@ -40,9 +42,9 @@
      </section><!--/#contact-page-->
  
      <section id="bottom">
-         <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-             <div class="row">
-                 <div class="col-md-3 col-sm-6" style="margin-top:30px;">
+         <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" >
+             <div class="row" style="margin-top:30px;">
+                 <div class="col-md-3 col-sm-6">
                      <div class="widget">
                          <h3>Company</h3>
                          <ul>
