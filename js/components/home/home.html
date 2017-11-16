@@ -1,23 +1,22 @@
 <div style="width:100%; ">
-	<img src="images/man-writing-at-desk_4460x4460.jpg" class="img-responsive">
+    <img src="images/man-writing-at-desk_4460x4460.jpg" class="img-responsive">
 </div>
 
 <section id="feature">
     <div class="container">
-            <br>
+        <br>
         <div class="center wow fadeInDown">
             <h2>Features</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore
-                magna aliqua. Ut enim ad minim veniam</p>
+            <p class="lead">Leverage agile frameworks to provide a robust synopsis for high level overviews</p>
         </div>
-        
+
         <div class="row">
             <div class="features">
                 <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                     <div class="feature-wrap">
                         <i class="fa fa-laptop"></i>
                         <h2>Fresh and Clean</h2>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                        <h3>Iterative approaches to corporate strategy</h3>
                     </div>
                 </div>
                 <!--/.col-md-4-->
@@ -26,7 +25,7 @@
                     <div class="feature-wrap">
                         <i class="fa fa-comments"></i>
                         <h2>Retina ready</h2>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                        <h3>Foster collaborative thinking to further the overall value proposition</h3>
                     </div>
                 </div>
                 <!--/.col-md-4-->
@@ -35,7 +34,7 @@
                     <div class="feature-wrap">
                         <i class="fa fa-cloud-download"></i>
                         <h2>Easy to customize</h2>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                        <h3>Organically grow the holistic world view of disruptive innovation</h3>
                     </div>
                 </div>
                 <!--/.col-md-4-->
@@ -44,7 +43,7 @@
                     <div class="feature-wrap">
                         <i class="fa fa-leaf"></i>
                         <h2>Adipisicing elit</h2>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                        <h3>Bring to the table win-win survival strategies to ensure proactive domination</h3>
                     </div>
                 </div>
                 <!--/.col-md-4-->
@@ -52,8 +51,8 @@
                 <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                     <div class="feature-wrap">
                         <i class="fa fa-cogs"></i>
-                        <h2>Sed do eiusmod</h2>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                        <h2>Leverage agile frameworks</h2>
+                        <h3>Provide a robust synopsis for high level overviews</h3>
                     </div>
                 </div>
                 <!--/.col-md-4-->
@@ -61,8 +60,8 @@
                 <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                     <div class="feature-wrap">
                         <i class="fa fa-heart"></i>
-                        <h2>Labore et dolore</h2>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                        <h2>Efficiently unleash</h2>
+                        <h3>Cross-media information without cross-media value</h3>
                     </div>
                 </div>
                 <!--/.col-md-4-->
@@ -77,7 +76,7 @@
 
 <section id="recent-works">
     <div class="container">
-            <br>
+        <br>
         <div class="center wow fadeInDown">
             <h2>Recent Works</h2>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore
@@ -197,7 +196,7 @@
 
 <section id="middle">
     <div class="container">
-            <br><br><br><br>
+        <br><br><br><br>
         <div class="row">
             <div class="col-sm-6 wow fadeInDown">
                 <div class="skill">
@@ -247,13 +246,13 @@
             <!--/.col-sm-6-->
 
             <div class="col-sm-6 wow fadeInDown">
-                <div class="accordion">
+                <div class="accordion" ng-init="accord_count = 1">
                     <h2>Why People like us?</h2>
                     <div class="panel-group" id="accordion1">
                         <div class="panel panel-default">
-                            <div class="panel-heading active">
+                            <div class="panel-heading" ng-class="{'active': accord_count == 1}">
                                 <h3 class="panel-title">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
+                                    <a class="accordion-toggle" ng-click="accord_count=1" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
                                               Lorem ipsum dolor sit amet
                                               <i class="fa fa-angle-right pull-right"></i>
                                             </a>
@@ -277,9 +276,9 @@
                         </div>
 
                         <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" ng-class="{'active': accord_count == 2}">
                                 <h3 class="panel-title">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
+                                    <a class="accordion-toggle" ng-click="accord_count=2" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
                                               Lorem ipsum dolor sit amet
                                               <i class="fa fa-angle-right pull-right"></i>
                                             </a>
@@ -295,9 +294,9 @@
                         </div>
 
                         <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" ng-class="{'active': accord_count == 3}">
                                 <h3 class="panel-title">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1">
+                                    <a class="accordion-toggle" ng-click="accord_count=3" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1">
                                               Lorem ipsum dolor sit amet
                                               <i class="fa fa-angle-right pull-right"></i>
                                             </a>
@@ -313,15 +312,15 @@
                         </div>
 
                         <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <div class="panel-heading" ng-class="{'active': accord_count == 4}">
                                 <h3 class="panel-title">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour1">
+                                    <a class="accordion-toggle" ng-click="accord_count=4" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour1">
                                               Lorem ipsum dolor sit amet
                                               <i class="fa fa-angle-right pull-right"></i>
                                             </a>
                                 </h3>
                             </div>
-                            <div id="collapseFour1" class="panel-collapse collapse">
+                            <div id="collapseFour1" class="panel-collapse collapse ">
                                 <div class="panel-body">
                                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
                                     non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
@@ -342,20 +341,19 @@
 <!--/#middle-->
 
 <section id="bottom">
-    <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-        <div class="row">
+    <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" >
+        <div class="row" style="margin-top:30px;">
             <div class="col-md-3 col-sm-6">
-                <div class="widget" style="margin-top:30px;">
+                <div class="widget">
                     <h3>Company</h3>
                     <ul>
                         <li><a href="#">About us</a></li>
                         <li><a href="#">We are hiring</a></li>
                         <li><a href="#">Meet the team</a></li>
-                        <li><a href="#">Copyright</a></li>
+                        <li><a href="#">Copyright</a></li>                           
                     </ul>
-                </div>
-            </div>
-            <!--/.col-md-3-->
+                </div>    
+            </div><!--/.col-md-3-->
 
             <div class="col-md-3 col-sm-6">
                 <div class="widget">
@@ -364,11 +362,10 @@
                         <li><a href="#">Faq</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Forum</a></li>
-                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Documentation</a></li>                          
                     </ul>
-                </div>
-            </div>
-            <!--/.col-md-3-->
+                </div>    
+            </div><!--/.col-md-3-->
 
             <div class="col-md-3 col-sm-6">
                 <div class="widget">
@@ -379,9 +376,8 @@
                         <li><a href="#">Theme</a></li>
                         <li><a href="#">Development</a></li>
                     </ul>
-                </div>
-            </div>
-            <!--/.col-md-3-->
+                </div>    
+            </div><!--/.col-md-3-->
 
             <div class="col-md-3 col-sm-6">
                 <div class="widget">
@@ -390,19 +386,17 @@
                         <li><a href="#">Adipisicing Elit</a></li>
                         <li><a href="#">Eiusmod</a></li>
                         <li><a href="#">Tempor</a></li>
-                        <li><a href="#">Veniam</a></li>
+                        <li><a href="#">Veniam</a></li>                           
                     </ul>
-                </div>
-            </div>
-            <!--/.col-md-3-->
+                </div>    
+            </div><!--/.col-md-3-->
         </div>
     </div>
-</section>
-<!--/#bottom-->
+</section><!--/#bottom-->
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.prettyPhoto.js"></script>
-<script src="js/jquery.isotope.min.js"></script>   
+<script src="js/jquery.isotope.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/main.js"></script>
