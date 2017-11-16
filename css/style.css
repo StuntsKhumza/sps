@@ -30,6 +30,10 @@ h6 {
 	color:#333;
 }
 
+.aling-center {
+  text-align: center;
+}
+
 .header-div{
   background: url(../images/man-writing-at-desk_4460x4460.jpg) no-repeat; 
   background-size: cover;
@@ -40,6 +44,10 @@ h6 {
 h1{
   font-size: 36px;
   color:#fff;
+}
+
+.featureh1 {
+  color: #434A54;
 }
 
 h2{
@@ -196,8 +204,14 @@ body > section {
 *******Header******
 **************************/
 
+
+
 .navbar-fixed-top .navbar-toggle .icon-bar {
   background-color: #283890;
+}
+
+.navbar-toggle {
+ border: 1px solid #ccc; 
 }
 
 .navbar>.container .navbar-brand{
@@ -426,6 +440,7 @@ ul.social-share li a:hover {
 .feature-wrap {
   margin-bottom: 35px;
   overflow: hidden;
+  text-align: center;
 }
 
 .feature-wrap h2{
@@ -469,8 +484,9 @@ ul.social-share li a:hover {
   padding: 0;
 }
 
-#recent-works{
-    padding-bottom: ;
+.recent-works-p{
+    font-size: 14pt;
+    color: #434A54
 }
 
 .recent-work-wrap {
@@ -1854,8 +1870,12 @@ ul.sidebar-gallery {
   padding-top: 30px;
   padding-bottom: 30px;
   color: #fff;
-  background: #424242;
+  background: #444444;
 
+}
+
+#footer h1,#footer h2, #footer h3, #footer h4 {
+  color: #fff;
 }
 
 #footer a {
@@ -1867,16 +1887,21 @@ ul.sidebar-gallery {
 }
 
 #footer ul {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 9pt;
+  color: #989898;
+  font-family: 'PT Sans Caption', sans-serif;
 }
 
 #footer ul > li {
-  display: inline-block;
-  margin-left: 15px;
+  margin: 10px;
 }
 
+#footer ul > li > a > i {
+  margin-right: 5px;
+}
 
 
 
