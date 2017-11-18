@@ -39,7 +39,7 @@
 
 <body class="homepage" ng-app="main-app" ng-init="navCount =1">
     <header id="header">
-        <nav class="navbar" role="banner">
+        <nav class="navbar navbar-fixed-top" role="banner">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -54,7 +54,7 @@
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li ng-class="{active: navCount==1}">
-                            <a href="#" ng-click="navCount = 1">Home</a>
+                            <a href="#"ng-click="navCount = 1">Home</a>
                         </li>
                         <li ng-class="{active: navCount==2}">
                             <a href="#" ng-click="navCount = 2">About Us</a>

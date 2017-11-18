@@ -299,7 +299,7 @@
 @media (max-width: 480px) {
 
   .navbar-brand > img {
-    display: none;
+   /* display: none;*/
   }
 
   .navbar-fixed-top .navbar-nav > li > a {

@@ -318,6 +318,8 @@ ul.social-share li a:hover {
   color: #fff;
 }
 
+
+
  .navbar-nav .dropdown-menu {
   background-color: rgba(0,0,0,.85);
   -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
@@ -341,6 +343,10 @@ ul.social-share li a:hover {
   color: #fff;
 }
 
+.active > a {
+  color: red;
+}
+
 .navbar-nav .dropdown-menu > li:hover > a,
  .navbar-nav .dropdown-menu > li:focus > a,
  .navbar-nav .dropdown-menu > li.active > a {
@@ -362,7 +368,9 @@ ul.social-share li a:hover {
   padding-bottom: 0;
 }
 
-
+.navbar-collapse  .active > a{
+color: #fff !important;
+}
 /*************************
 *******Home Page******
 **************************/
