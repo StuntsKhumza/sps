@@ -50,6 +50,10 @@ h1{
   color: #434A54;
 }
 
+.featureh1 .first-header {
+	font-size:36px;
+}
+
 h2{
   font-size: 20px;
 }
@@ -63,6 +67,11 @@ h3{
 
 h4{
   font-size: 16px;
+}
+
+.home-header  span{
+	color:#434a54;
+	font-weight:500 important!;
 }
 
 a {
@@ -452,7 +461,8 @@ color: #fff !important;
 }
 
 .feature-wrap h2{
-  margin-top: 10px;
+  margin-top: 15px;
+  color:#78789f;
 }
 
 .feature-wrap .pull-left {
